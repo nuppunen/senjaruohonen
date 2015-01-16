@@ -1,0 +1,31 @@
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+html {
+  height: 100%;
+  background: url(mini.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+div {
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+p {
+  color: #ecb;
+  text-align: center;
+  font: bold 16pt 'Raleway', sans-serif;
+}
+
+span {
+  font-style: italic;
+  font-size: 12pt;
+}
