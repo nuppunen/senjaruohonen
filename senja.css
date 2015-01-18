@@ -1,31 +1,75 @@
 
-@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow:400,700);
 
 html {
   height: 100%;
-  background: url(mini.jpg) no-repeat center center fixed;
+  background: url(/imgs/mini.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-div {
+div#poster {
   display: block;
   position: absolute;
   top: 35%;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.9);
 }
 
-p {
-  color: #ecb;
+p.poster {
+  margin: 1em auto;
+  width: 80%;
+  color: #fed;
   text-align: center;
-  font: bold 16pt 'Raleway', sans-serif;
+  font: 14pt 'PT Sans Narrow', sans-serif;
+}
+p.poster em {
+  font: normal bold 21pt 'PT Sans Narrow', sans-serif;
+}
+p.poster a {
+  color: inherit;
+}
+p.poster a:hover em {
+  font-style: italic;
 }
 
-span {
-  font-style: italic;
-  font-size: 12pt;
+div#cv {
+  margin: 2em auto;
+  padding: 2em;
+  max-width: 8.3in;
+  background: #ddd;
+  border: solid 2px gray;
+  border-color: gray dimgray dimgray gray;
+}
+
+div#cv h1 {
+  font: 26pt 'PT Sans', sans-serif;
+}
+div#cv h2 {
+  font: 20pt 'PT Sans', sans-serif;
+  border-bottom: solid 1px gray;
+}
+div#cv address {
+  font: 16pt 'PT Sans', sans-serif;
+}
+div#cv p {
+  margin: 2em;
+  text-align: justify;
+  font: 13pt 'PT Sans Narrow', sans-serif;
+}
+
+ul {
+  margin: 2em;
+  padding: 0;
+}
+ul > li {
+  margin: 1em 0;
+  list-style: none;
+  font: 13pt 'PT Sans Narrow', sans-serif;
+}
+ul > li > cite {
+  font: italic 16pt 'PT Sans', sans-serif;
 }
