@@ -32,26 +32,33 @@ div#cover {
   background-size: cover;
 }
 
-#cover p {
-  margin: 6rem 0;
-  padding: 1rem 8rem;
+div#banner {
+  position: absolute;
+  top: 28%;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.88);
+}
+
+#banner p {
+  margin: 1rem auto;
+  max-width: 72%;
   text-align: center;
-  font-family: 'PT Sans Narrow', sans-serif;
   font-size: 18pt;
   font-weight: normal;
+  font-family: 'PT Sans Narrow', sans-serif;
   color: #fff8f0;
-  background: rgba(0, 0, 0, 0.666);
 }
-#cover p em {
+#banner p em {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 28pt;
   font-weight: bold;
   font-style: normal;
 }
-#cover p a {
+#banner p a {
   color: inherit;
 }
-#cover p a:hover em {
+#banner p a:hover em {
   font-style: italic;
 }
 
