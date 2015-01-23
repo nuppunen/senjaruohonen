@@ -1,26 +1,29 @@
 
-var background = [
-  { width:  640, height:  360, img: '/imgs/mini.jpg' },
-  { width: 1280, height:  720, img: '/imgs/1280.jpg' },
-  { width: 1920, height: 1080, img: '/imgs/1920.jpg' },
-  { width: 2560, height: 1440, img: '/imgs/2560.jpg' },
-  { width: 3840, height: 2160, img: '/imgs/3840.jpg' },
+var imgs = [
+  { url: 'url(imgs/1280.jpg)', w: 1280, h:  720 },
+  { url: 'url(imgs/1920.jpg)', w: 1920, h: 1080 },
+  { url: 'url(imgs/2560.jpg)', w: 2560, h: 1440 },
+  { url: 'url(imgs/3840.jpg)', w: 3840, h: 2160 },
 ];
 
-var choose = function(x, y) {
-  var img = background[0].img;
-  background.forEach(function(bg) {
-    if (x >= bg.width || y >= bg.height) {
-      img = bg.img;
-    }
+function setCoverImage() {
+  var bg;
+  var w = $(window).width();
+  var h = $(window).height();
+
+  imgs.some(function(i) {
+    bg = i.url;
+    return (w <= i.w && h <= i.h);
   });
-  return img;
-};
 
-var change = function() {
-  var img = choose(window.screen.availWidth, window.screen.availHeight);
-  var html = document.getElementsByTagName('html')[0];
-  html.style.backgroundImage = 'url(' + img + ')';
-};
+  $('#viewport').css('height', h);
+  $('#cover').css('background-image', bg);
+}
 
-window.onload = setTimeout(change, 1);
+$(document).ready(function() {
+  setCoverImage();
+
+  $(window).resize(function() {
+    $('#viewport').css('height', $(window).height());
+  });
+});
