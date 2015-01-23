@@ -86,6 +86,7 @@ h2 {
 address {
   margin: 1rem 2rem;
   font-size: 16pt;
+  font-style: normal;
   font-family: 'PT Sans', sans-serif;
 }
 address small {
