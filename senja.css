@@ -71,6 +71,11 @@ div#banner {
   border-color: gray dimgray dimgray gray;
 }
 
+#a4 img {
+  float: right;
+  padding: 0 1em;
+}
+
 h1, h2 {
   font-weight: normal;
   font-family: 'PT Sans', sans-serif;
