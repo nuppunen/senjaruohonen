@@ -90,14 +90,14 @@ h2 {
 
 address {
   margin: 1rem 2rem;
-  font-size: 16pt;
+  font-size: 12pt;
   font-style: normal;
   font-family: 'PT Sans', sans-serif;
 }
-address small {
-  font-size: 12pt;
-  font-family: 'PT Sans', sans-serif;
+address strong {
+  font: 15pt 'PT Sans', sans-serif;
 }
+
 #a4 p {
   margin: 1.2rem 2rem;
   text-indent: 1.2rem;
@@ -120,4 +120,7 @@ ul > li > cite {
   font-size: 16pt;
   font-style: italic;
   font-family: 'PT Sans', sans-serif;
+}
+ul > li > small {
+  font-style: italic;
 }
