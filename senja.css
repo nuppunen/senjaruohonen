@@ -106,6 +106,16 @@ address strong {
   font-size: 13pt;
 }
 
+a:link {
+  color: #B70000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #6D0000;
+  text-decoration: none;
+}
+
 ul {
   margin: 2rem;
   padding: 0;
